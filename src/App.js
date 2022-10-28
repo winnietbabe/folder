@@ -13,14 +13,15 @@ import Settings from "./pages/Settings";
 
 
 
+
 function App() {
   return (
     <BrowserRouter>
       <div className="App flex ">
         <div>
           <SideBar />
-         
         </div>
+       
         
         <div>
           <Routes>

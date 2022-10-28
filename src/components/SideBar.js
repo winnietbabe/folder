@@ -10,7 +10,7 @@ function SideBar() {
     <div className="m-2 p-5 shadow">
       <FiMusic className="text-4xl text-orange-600 mb-4" />
 
-      <div className="space-y-3  bg-black p-3 rounded-2xl">
+      <div className="space-y-7  mt-10 bg-black p-3 h-[14em] rounded-2xl">
         <div>
           <Link to="/" className="">
             <RiHome5Fill

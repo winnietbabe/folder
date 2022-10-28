@@ -1,23 +1,33 @@
 import React from "react";
 import Header from "../components/Header";
 import UserImg from "../components/images.png";
-import {AiOutlineHeart } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai";
+import Charts from "../components/Charts";
 
 function HomePage() {
   return (
     <div>
       <Header />
-      <div className="h-[300px] bg-blue-100 rounded-2xl w-[600px] flex m-5 p-4 ">
-      <div className=" ">
-      <p>Currated playlists</p>
-      <h1>R & B</h1>
-      <span>Ms. Third ward, your first question – what is your aspiration in life?
-      Oh... My aspiration in life... would be... to be happy</span>
-      <span>  <AiOutlineHeart/> 35 Likes</span>
-     
-      </div>
+      <div className="flex justify-between">
+        <div className="h-[372px] bg-blue-400 rounded-3xl w-[700px] flex m-5 p-4 justify-evenly ">
+          <div className="m-6 space-y-20 ">
+            <p className="mb-8  text-gray-200">Currated playlists</p>
+            <h1 className="text-4xl font-bold text-white">R & B hits</h1>
+            <span className="text-gray-200 text-sm ">
+              Ms. Third ward, your first question – what is your aspiration in
+              life? Oh... My aspiration in life... would be... to be happy
+            </span>
+            <h5 className="mt-[2em] flex items-center text-gray-100">
+              {" "}
+              <AiFillHeart /> 35 Likes
+            </h5>
+          </div>
+          <div className="w-[60em] ">
+            <img src={UserImg} className="h-[20em]" />
+          </div>
+        </div>
         <div>
-          <img src={UserImg} />
+          <Charts />
         </div>
       </div>
     </div>
