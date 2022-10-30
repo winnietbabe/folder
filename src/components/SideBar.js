@@ -1,16 +1,19 @@
 import { RiHome5Fill, RiRadio2Fill } from "react-icons/ri";
-import { MdSubscriptions } from "react-icons/md";
+// import { MdSubscriptions } from "react-icons/md";
 import { AiFillPicture, AiOutlineUser, AiFillSetting } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { FiMusic } from "react-icons/fi";
+import UserImg from "../Rimages/logo.svg";
+import User2Img from "../Rimages/playlist.svg";
+
+// import { FiMusic } from "react-icons/fi";
 
 
 function SideBar() {
   return (
-    <div className="m-2 p-5 shadow">
-      <FiMusic className="text-4xl text-orange-600 mb-4" />
+    <div className="m-2 p-2 shadow">
+      <img src={UserImg} className=" text-orange-600 mb-4"/>
 
-      <div className="space-y-7  mt-10 bg-black p-3 h-[14em] rounded-2xl">
+      <div className="space-y-7 w-14 mt-10 bg-black  p-3 h-[14em] rounded-2xl">
         <div>
           <Link to="/" className="">
             <RiHome5Fill
@@ -21,7 +24,7 @@ function SideBar() {
         </div>
         <div>
         <Link to="/library" className="">
-          <MdSubscriptions
+          <img src={User2Img}
             className="text-gray-600 cursor-pointer hover:text-yellow-500"
             size={25}
           />
@@ -44,7 +47,7 @@ function SideBar() {
         </Link>
         </div>
       </div>
-      <div className="mt-[30px] space-y-3  bg-black p-3 rounded-2xl">
+      <div className="mt-[30px] space-y-3  w-14 bg-black p-3 rounded-2xl">
         <AiOutlineUser
           className="text-gray-600 cursor-pointer hover:text-yellow-500"
           size={25}
